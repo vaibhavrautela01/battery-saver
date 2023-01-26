@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 int level = (int)  batteryLevel();
 
-                tv_battery.setText("BATTERY: " + level + "0");
+                tv_battery.setText("BATTERY: " + level + "%");
 
                 if (level > 75)
                 {
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (level <= 5)
                 {
-                    iv_battery.setImageResource(R.drawable.battery5);
+                    iv_battery.setImageResource(R.drawable.battery5 );
                 }
                 handler.postDelayed(runnable,5000);
 
